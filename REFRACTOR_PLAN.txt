@@ -1,0 +1,21 @@
+Refactor Plan for looks_gems Project
+
+1. Remove unnecessary/unreferenced files:
+   - /admin/jquery.html (not used)
+   - /assets/Unconfirmed *.crdownload (incomplete downloads)
+   - /assets/.DS_Store (system file)
+   - /assets/images/ (empty)
+
+2. Review all PHP files for duplicate or unused code blocks, especially in /admin and /includes.
+
+3. Ensure only required images are kept in /assets and /uploads.
+
+4. Keep only theme.css in /css, remove unused CSS files if any.
+
+5. Remove empty /js folder.
+
+6. Add comments and modularize code in all PHP files, especially for authentication, product/category management, cart, wishlist, and admin panel.
+
+7. Validate that all features and UI remain unchanged after cleanup.
+
+8. Document any changes in this file.

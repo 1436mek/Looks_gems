@@ -1,0 +1,76 @@
+/* Looks Gems Custom Theme */
+:root {
+  --navbar-bg: #FADADD;
+  --navbar-bg-alt: #FFF8F0;
+  --button-bg: #E6A4B4;
+  --button-hover: #F4E1B6;
+  --category-icon: #F4E1B6;
+  --main-bg: #FFF8F0;
+  --text-main: #4A4A4A;
+}
+body {
+  background: var(--main-bg);
+  color: var(--text-main);
+}
+.navbar, .navbar.bg-white {
+  background: var(--navbar-bg) !important;
+}
+.navbar .navbar-brand, .navbar .nav-link, .navbar .dropdown-item {
+  color: var(--text-main) !important;
+}
+.btn-primary, .banner-btn {
+  background: var(--button-bg) !important;
+  border: none;
+  color: #fff !important;
+}
+.btn-primary:hover, .banner-btn:hover {
+  background: var(--button-hover) !important;
+  color: var(--text-main) !important;
+}
+.category-link, .category-link i {
+  color: var(--text-main) !important;
+}
+.category-link.active, .category-link:hover {
+  background: var(--category-icon) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--button-bg) !important;
+}
+.product-card, .card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e6a4b433;
+  border: none;
+}
+.product-card {
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+.product-card:hover {
+  box-shadow: 0 8px 24px #e6a4b466;
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--button-bg);
+}
+.product-card img {
+  transition: transform 0.3s;
+}
+.product-card:hover img {
+  transform: scale(1.08);
+}
+.text-gold, .category-link.active i, .category-link:hover i {
+  color: var(--category-icon) !important;
+}
+input, textarea, select {
+  border-radius: 6px !important;
+  border: 1px solid #e6a4b4 !important;
+}
+.carousel-inner img {
+  border-radius: 1.5rem;
+}
+@media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 220px;
+  }
+  .banner, .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
